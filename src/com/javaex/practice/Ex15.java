@@ -10,6 +10,7 @@ public class Ex15 {
 		double a = sc.nextDouble();
 		
 		System.out.print(a+ "마일은 " + a*1.609 + "킬로미터 입니다.");
+		
 		sc.close();
 		
 	}
