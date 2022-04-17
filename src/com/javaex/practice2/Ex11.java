@@ -1,7 +1,29 @@
 package com.javaex.practice2;
 
-public class Ex11 {
+import java.util.Scanner;
+
+public class Ex11 { //소문자 이외 값 적용x
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("알파벳 1글자(소문자)를 입력하세요.");
+		System.out.print("알파벳: ");
+		String alphabet = sc.nextLine();
+		
+		switch(alphabet) {
+			case "a" :
+			case "e" :
+			case "i" :
+			case "o" :
+			case "u" :
+				System.out.println("모음입니다.");
+				break;
+			
+			default :
+				System.out.println("자음입니다.");
+			break;	
+		} 
+		
+		sc.close();	
 	}
 }
